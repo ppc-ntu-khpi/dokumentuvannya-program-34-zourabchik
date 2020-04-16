@@ -1,6 +1,11 @@
 package domain;
+/** Містить реалізацію методів
+ * @author KatiaZourab
+ */
 public class Employee {
-
+	/** Вивід значень
+	 * @return String
+	 */
     @Override
     public String toString() {
         return "\nEmployee ID= " + ID + "\nName= " + name + "\nJobTitle= " + jobTitle + "\nLevel= " + level + "\nDept= " + dept;
@@ -13,7 +18,12 @@ public class Employee {
     private String dept;
 
    // private static int employeesCount = 0;
-
+    /** Ініціалізує
+     * @param name
+     * @param jobTitle
+     * @param level
+     * @param dept
+     */
     public Employee(String name, String jobTitle, int level, String dept) {
         this();
         setName(name);
@@ -29,14 +39,17 @@ public class Employee {
         }
         this.dept = dept;
     }
-
+    /** Ініціалізує
+     */
     public Employee() {
         ID = (int)(Math.random()*1000);
 //        if (ID > 10000) {
 //            throw new NumberFormatException("ERROR! Employee's ID cannot be greater than 10000. Employee is not created!");
 //        }
     }
-
+    /** Встановити значення
+     * @param job
+     */
     public void setJobTitle(String job) {
         jobTitle = job;
     }
@@ -44,11 +57,15 @@ public class Employee {
     public String getJobTitle() {
         return jobTitle;
     }
-
+    /** Встановити значення
+     * @return name
+     */
     public String getName() {
         return name;
     }
-
+    /** Встановити значення
+     * @param level
+     */
     public void setLevel(int level) {
         switch (level) {
             case 1:
@@ -60,19 +77,27 @@ public class Employee {
                 this.level = 1;
         }
     }
-
+    /** Отримати значення
+     * @return level
+     */
     public int getLevel() {
         return level;
     }
-
+    /** Отримати значення
+     * @return debt
+     */
     public String getDept() {
         return dept;
     }
-
+    /** Встановити значення
+     * @param dept
+     */
     public void setDept(String dept) {
         this.dept = dept;
     }
-
+    /** Встановити значення
+     * @param name
+     */
     public void setName(String name) {
 //        boolean correctName = true;
 //        for (int i = 0; i < name.length(); i++) {

@@ -1,9 +1,13 @@
 package test;
 
 import domain.*;
-
+/** Обчислення і відображення результатів
+* Містить реалізацію статичного методу main ()
+*/
 public class EmployeesTest {
-
+	/** Виконується при запуску програми
+	 * @param args - параметри запуску програми
+	 */
     public static void main(String args[]) {
 
         String[] skills = {"Microsoft Word", "TeX", "OpenOffice", "Markdown"};
